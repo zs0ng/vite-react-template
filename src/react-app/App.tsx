@@ -10,7 +10,7 @@ function App() {
     <div className="learnify-landing-page">
       <h1>
         <img className="logo learnify fade-in-up" 
-        src="/src/react-app/assets/learnify.svg" 
+        src="./assets/learnify.svg" 
         alt="Learnify" 
         style={{ height: "20px" }} 
        
