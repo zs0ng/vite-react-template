@@ -1,43 +1,31 @@
 // src/App.tsx
 
-import { useState } from "react";
-import "./index.css";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState("unknown");
+
 
   return (
-    <>
-      <h1>Vite + React + Hono + Cloudflare</h1>
-      <div className="card">
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          aria-label="increment"
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <div className="card">
-        <button
-          onClick={() => {
-            fetch("/api/")
-              .then((res) => res.json() as Promise<{ name: string }>)
-              .then((data) => setName(data.name));
-          }}
-          aria-label="get name"
-        >
-          Name from API is: {name}
-        </button>
-        <p>
-          Edit <code>worker/index.ts</code> to change the name
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the logos to learn more</p>
-    </>
+    
+    <div className="learnify-landing-page">
+      <h1>
+        <img className="logo learnify fade-in-up" 
+        src="/src/react-app/assets/learnify.svg" 
+        alt="Learnify" 
+        style={{ height: "20px" }} 
+       
+        />
+      </h1>
+      <p className="title fade-in-up delay-1" style={{ paddingTop: "90px"}}>LEARN EVERYTHING </p>
+      <p className="title fade-in-up delay-2">FASTER AND BETTER </p>
+      <p className="description fade-in-up delay-3" style={{ color: "#ffffff", fontWeight: "300" }}>
+      Build to help you master new skills, learn a vast amount of knowledge and even do a deep search.
+      </p>
+      <p className="description fade-in-up delay-3" style={{ color: "#838383", fontWeight: "300", paddingTop: "20px"}}>
+      Learnify is an powerful assistant that can inspire you, impress you and improve you.
+      </p>
+      <button className="button fade-in-up delay-3" style={{ backgroundColor: "#000", color: "#ffffff", fontWeight: "300", padding: "10px 20px", borderRadius: "5px", marginTop: "20px" }}>Try it now</button>
+    </div>
   );
 }
 
