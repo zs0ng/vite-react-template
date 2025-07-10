@@ -1,4 +1,4 @@
-.learnify-landing-page :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,30 +13,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.learnify-landing-page a {
+a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
-.learnify-landing-page a:hover {
+a:hover {
   color: #535bf2;
 }
 
-
-.learnify-landing-page body {
+body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: transparent;
 }
 
-.learnify-landing-page h1 {
+h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-.learnify-landing-page button {
+button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -47,23 +45,23 @@
   cursor: pointer;
   transition: border-color 0.25s;
 }
-.learnify-landing-page button:hover {
+button:hover {
   border-color: #646cff;
 }
-.learnify-landing-page button:focus,
-.learnify-landing-page button:focus-visible {
+button:focus,
+button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
-  .learnify-landing-page :root {
+  :root {
     color: #213547;
     background-color: transparent;
   }
-  .learnify-landing-page a:hover {
+  a:hover {
     color: #747bff;
   }
-  .learnify-landing-page button {
+  button {
     background-color: #f9f9f9;
   }
 }
